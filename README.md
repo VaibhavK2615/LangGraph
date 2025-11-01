@@ -51,29 +51,25 @@ A comprehensive market analysis application built with Next.js, LangGraph, Supab
 
 ### 2. Project Setup
 
-\`\`\`bash
-# Clone and install dependencies
-git clone <repository-url>
-cd market-analyzer
-npm install
-\`\`\`
+- Clone and install dependencies
+- git clone <repository-url>
+- cd market-analyzer
+- npm install
 
 ### 3. Environment Configuration
 
 Create `.env.local` file:
 
-\`\`\`env
-# Supabase Configuration
-NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+#### Supabase Configuration
+1. NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+2. NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
 
-# Groq API Configuration
-GROQ_API_KEY=your_groq_api_key
+#### Groq API Configuration
+1. GROQ_API_KEY=your_groq_api_key
 
-# LangSmith Configuration (Optional)
-LANGSMITH_API_KEY=your_langsmith_api_key
-LANGSMITH_PROJECT=market-analyzer
-\`\`\`
+#### LangSmith Configuration (Optional)
+1. LANGSMITH_API_KEY=your_langsmith_api_key
+2. LANGSMITH_PROJECT=market-analyzer
 
 ### 4. API Keys Setup
 
@@ -94,9 +90,7 @@ LANGSMITH_PROJECT=market-analyzer
 
 ### 5. Run the Application
 
-\`\`\`bash
 npm run dev
-\`\`\`
 
 Visit `http://localhost:3000` to see the application.
 

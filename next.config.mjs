@@ -9,6 +9,9 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  experimental: {
+    serverComponentsExternalPackages: ['@langchain/langgraph', '@langchain/core', '@langchain/groq'],
+  },
 }
 
 export default nextConfig

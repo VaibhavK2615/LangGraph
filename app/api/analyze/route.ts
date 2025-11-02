@@ -27,13 +27,19 @@ export async function POST(request: NextRequest) {
     // Create the analysis graph
     const graph = createAnalysisGraph()
 
-    // Initial state
+    // Initial state - ensure all fields are explicitly set
     const initialState: AnalysisState = {
-      hsn_code,
-      country,
-      countries,
-      analysis_type,
+      hsn_code: hsn_code || "",
+      country: country || undefined,
+      countries: countries || undefined,
+      analysis_type: analysis_type || "",
       market_data: [],
+      risk_analysis: undefined,
+      market_analysis: undefined,
+      stability_analysis: undefined,
+      smart_suggestions: undefined,
+      country_comparison: undefined,
+      error: undefined,
     }
 
     // Run the analysis

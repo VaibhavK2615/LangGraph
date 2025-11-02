@@ -373,7 +373,15 @@ export async function evaluateResults(state: AnalysisState): Promise<Partial<Ana
   }
 }
 
-export function createAnalysisGraph() {
+// Cache the compiled graph to avoid recompiling on every request
+let compiledGraphCache: any = null
+
+export function createAnalysisGraph(): any {
+  // Return cached graph if available
+  if (compiledGraphCache) {
+    return compiledGraphCache
+  }
+
   const workflow = new StateGraph<AnalysisState>({
     channels: {
       hsn_code: null,
@@ -422,5 +430,8 @@ export function createAnalysisGraph() {
     .addEdge("do_smart_suggestions", "evaluator")
     .addEdge("do_country_comparison", "evaluator")
     .addEdge("evaluator", END)
-  return workflow.compile()
+  
+  const compiled = workflow.compile()
+  compiledGraphCache = compiled
+  return compiled
 }

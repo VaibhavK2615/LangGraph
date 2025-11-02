@@ -4,20 +4,23 @@ A comprehensive market analysis application built with Next.js, LangGraph, Supab
 
 ## Live On
 
-<!-- [**Launch Site**](https://nx-next-rag.vercel.app/) -->
+[**Launch Web App**](https://langgraph-pazy.onrender.com)
 
 ---
 
 ## Screenshots
 
-<!-- ### 🔹 Analysis section -->
-<!-- ![Analysis](apps/demoRAG/public/analysis.png) -->
+### 🔹 Analyze Page
+![Analysis](public/analyze.png)
 
-<!-- ### 🔹 Historical Data View -->
-<!-- ![Historical Data](apps/demoRAG/public/history.png) -->
+### 🔹 Results
+![Results](public/results.png)
 
-<!-- ### 🔹 Modal View -->
-<!-- ![Modal](apps/demoRAG/public/modal.png) -->
+### 🔹 Modal View 1
+![Modal](public/modal1.png)
+
+### 🔹 Modal View 2
+![Modal](public/modal2.png)
 
 ---
 
